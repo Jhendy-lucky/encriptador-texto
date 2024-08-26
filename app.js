@@ -84,12 +84,9 @@ copy.addEventListener("click", () => {
 	let texto = textFinal;
 	texto.select();
 	document.execCommand('copy');
-	//navigator.clipboard.writeText(texto.value);
-	//clipboard función no compatible con móviles
 	alert("Texto Copiado");
 	reset();
 });
-//auto ajuste de textarea
 textoInicial.addEventListener("change", e => {
 	textoInicial.style.height = "auto";
 	let scHeight = e.target.scrollHeight;
